@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(196, 151, 151, 0.329),rgba(148, 148, 190, 0.527)), url('./images/bg.jpg');
+}
+nav{
+    display: flex;
+    padding: 1rem 3rem;
+    justify-content: space-between;
+}
+nav img{
+    width: 80px;
+    height: 80px;
+}
+ul{
+    list-style: none;
+}
+.links {
+   display: flex;
+   font-size: 18px;
+   font-weight: bold;
+   color: white;
+   align-items: center;
+   justify-content: center;
+   column-gap: 20px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h2{
+    width: 400px;
+    height: 50px;
+    text-align: center;
+}
+li{
+    cursor: pointer;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-size: 45px;
+}
+h2{
+    position:relative;
+    text-transform: uppercase;
+    background-position: bottom;
+    background-image: url('./images/téléchargement.jpeg');
+    background-size: 42px;
+    background-repeat: repeat-x;
+    --webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    color: rgb(51, 41, 27);
+
+}
+@keyframes animate {
+    0%{
+        background-position: left 0px top 80px;
+    }
+    40%{
+        background-position: left 800px top -50px;
+    }
+}
+
+h2 span{
+    animation: animate1 3s linear infinite;
+}
+h2 span:nth-child(1){
+    animation-delay: 0.2s;
+}
+h2 span:nth-child(2){
+    animation-delay: 0.4s;
+}
+h2 span:nth-child(3){
+    animation-delay: 0.6s;
+}
+h2 span:nth-child(4){
+    animation-delay: 0.8s;
+}
+h2 span:nth-child(5){
+    animation-delay: 1s;
+}
+h2 span:nth-child(6){
+    animation-delay: 1.2s;
+}
+h2 span:nth-child(7){
+    animation-delay: 1.4s;
+}
+
+@keyframes animate1 {
+    0%,80%{
+        color: rgb(82, 75, 75);
+        text-shadow: none;
+    }
+    100%{
+        color: yellow;
+        font-size: 28px;
+        text-shadow: 0px 0px 10px yellow,
+                    0px 0px 20px yellow,
+                    0px 0px 40px yellow,
+                    0px 0px 80px yellow,
+                    0px 0px 120px yellow,
+                    0px 0px 160px yellow,
+                    0px 0px 200px yellow,
+    }
+}
