@@ -113,3 +113,9 @@ h2 span:nth-child(7){
                     0px 0px 200px yellow,
     }
 }
+
+@media screen and (max-width:600px){
+    nav, ul.links{
+        flex-direction: column;
+    }
+}
